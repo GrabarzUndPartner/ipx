@@ -15,7 +15,9 @@
   "bin": "./bin/ipx.mjs",
   "files": [
     "dist",
-    "bin"
+    "bin",
+    "src",
+    "build.config"
   ],
   "scripts": {
     "postinstall": "unbuild",
