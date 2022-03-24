@@ -115,7 +115,7 @@ const createHTTPSource = (options) => {
     }
     const response = await fetch(id, {
       agent: id.startsWith("https") ? httpsAgent : httpAgent,
-      ...options.fetchOptions
+      ...typeof options.fetchOptions === "function" ? await options.fetchOptions() : options.fetchOptions
     });
     if (!response.ok) {
       throw createError(response.statusText || "fetch error", response.status || 500);

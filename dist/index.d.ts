@@ -31,7 +31,7 @@ interface IPXOptions {
     alias: Record<string, string>;
     fetchOptions: {
         [key: string]: any;
-    };
+    } | Function;
     sharp?: {
         [key: string]: any;
     };
