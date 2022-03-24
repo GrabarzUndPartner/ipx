@@ -18,6 +18,7 @@
     "bin"
   ],
   "scripts": {
+    "postinstall": "unbuild",
     "build": "unbuild",
     "dev": "nodemon",
     "lint": "eslint --ext .ts .",
