@@ -55,5 +55,10 @@
     "ts-jest": "latest",
     "typescript": "latest",
     "unbuild": "latest"
+  },
+  "overrides": {
+    "ohmyfetch": {
+      "node-fetch": "2.6.7"
+    }
   }
 }
